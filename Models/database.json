@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "username": "zakaria",
+      "password": "$2b$10$fgFUzxQSvK2xjO5Bhw5wnuNY6PtjOl.nSo3dTjaUHjIHJE.sc.V76",
+      "email": "zakaria@gmail.com",
+      "image": "image-1694877437306-194890036.png",
+      "id": 1
+    },
+    {
+      "username": "nawfal",
+      "password": "$2b$10$xsdEsJsO7C6qci0mGfVcc.5FfUQKbFEYCncRP8dFexCD2fX7pTIIO",
+      "email": "nawfal@gmail.com",
+      "image": "image-1694877960390-206208604.jpg",
+      "id": 2
+    },
+    {
+      "username": "zakaria",
+      "password": "$2b$10$ajBWelf2hFc4UJR953fmzO3UhU.ibWSsqK2lsxryR1WQdaq23DMxy",
+      "email": "zakaria@gmail.com",
+      "image": "image-1695029996952-442955117.jpg",
+      "id": 3
+    }
+  ],
+  "blogs": [
+    {
+      "blog_Title": "-azyta",
+      "blog_image": "blog_image-1694877747445-334391686.png",
+      "blog_description": "zehgaze\r\n",
+      "user_id": 1,
+      "id": 1
+    },
+    {
+      "blog_Title": "mamamamamm",
+      "blog_image": "blog_image-1694879311075-745646816.jpg",
+      "blog_description": "akzjkazjkazj",
+      "user_id": 2,
+      "id": 5
+    },
+    {
+      "blog_Title": "Ex consectetur dict",
+      "blog_image": "blog_image-1695026415134-520008582.jpg",
+      "blog_description": "Vero natus inventore",
+      "user_id": 2,
+      "id": 6
+    }
+  ]
+}

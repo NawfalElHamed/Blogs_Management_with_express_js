@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+
+body {
+    background: #ecf0f4;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    margin-bottom: 80px;
+}
+
+#description {
+    font-size: 24px;
+}
+
+.form-wrap {
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    max-width: 850px;
+    padding: 50px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.form-wrap:before {
+    content: "";
+    width: 90%;
+    height: calc(100% + 60px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: -30px;
+    background: #00bcd9;
+    z-index: -1;
+    opacity: 0.8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group>label {
+    display: block;
+    font-size: 18px;
+    color: #000;
+}
+
+.form-control {
+    height: 50px;
+    background: #ecf0f4;
+    border-color: transparent;
+    padding: 0 15px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #00bcd9;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+}
+
+textarea.form-control {
+    height: 160px;
+    padding-top: 15px;
+    resize: none;
+}
+
+.btn {
+    padding: .657rem .75rem;
+    font-size: 18px;
+    letter-spacing: 0.050em;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #00bcd9;
+    border-color: #00bcd9;
+}
+
+.btn-primary:hover {
+    color: #00bcd9;
+    background-color: #ffffff;
+    border-color: #00bcd9;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #00bcd9;
+    background-color: #ffffff;
+    border-color: #00bcd9;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: #00bcd9;
+    background-color: #ffffff;
+    border-color: #00bcd9;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+}
+
+.card {
+    border-radius: 40px;
+    overflow: hidden;
+    border: 0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06),
+        0 2px 4px rgba(0, 0, 0, 0.07);
+    transition: all 0.15s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1),
+        0 10px 8px rgba(0, 0, 0, 0.015);
+}
+
+.card-body .card-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    font-size: 24px;
+    color: #121212;
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    color: #4E4E4E;
+}
+
+.card .container {
+    width: 88%;
+    background: #F0EEF8;
+    border-radius: 30px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container:hover>img {
+    transform: scale(1.2);
+}

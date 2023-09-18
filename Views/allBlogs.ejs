@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blogs</title>
+</head>
+<body>
+    <header>
+        <div class="container d-flex justify-content-center align-items-center mt-5">
+            <a href="/blogs" class="btn btn-sm btn-primary me-5">Back To My Profil</a>
+        </div>
+    </header>
+    <section class="m-5">
+        <div class="row">
+            <% blogs.forEach((b, index)=> { %>
+                <div class="col-md-4 mb-4">
+                    <div class="animate__animated animate__bounce card" style="width: 18rem;">
+    
+                        <div class="container  card-img-top"
+                            style="background-image: url('/uploads/<%= b.blog_image %>'); background-size: cover; background-repeat: no-repeat; height: 200px;">
+                        </div>
+    
+                        <div class="card-body">
+    
+                            <h5 class="card-title ms-1">
+                                <%= b.blog_Title %>
+                            </h5>
+    
+                            <p class="card-text mb-5 ms-1 blog_description">
+                                <%= b.blog_description %>
+                            </p>
+                            <a href="/detailBlog/<%= b.id %>" class="btn btn-success mb-1 mt-1">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <% if ((index + 1) % 3===0) { %>
+        </div>
+        <div class="row">
+            <% } %>
+                <% }); %>
+        </div>
+    </section>
+    
+	<script src="/js/blog.js"></script>
+</body>
+</html>
