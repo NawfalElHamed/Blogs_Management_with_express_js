@@ -7,6 +7,7 @@ const upload = require("../Middlewares/multer")
 const logger = require("../Middlewares/logger")
 const authenticateUser = require("../Middlewares/authenticateUser")
 
+Router.use(checkToken)
 
 Router.get('/login',GetLogin);
 
@@ -16,7 +17,7 @@ Router.get('/register',GetRegister);
 
 Router.post('/register', upload.single('image'),PostRegister);
 
-Router.get('/Blogs', logger, authenticateUser,GetBlogs, checkToken);
+Router.get('/Blogs', logger, authenticateUser,GetBlogs);
 
 Router.post('/logout',PostLogout)
 
